@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FORM ELEMENTS</title>
+    </head>
+    <body>
+        <h2>Register User</h2>
+        <form action="">
+            <dl>
+                <dt>User Name</dt>
+                <dd>
+                    <input minlength="3" maxlength="10" pattern="[A-Z]{4,10}" placeholder="Romeo" type="text">
+                </dd>
+                <dt>PIN</dt>
+                <dd>
+                    <input type="text" name="PIN" size="4">
+                </dd>
+                <dt>Mobile</dt>
+                <dd>
+                    <input type="text" name="Mobile" pattern="[0-9]{10}">
+                </dd>
+            </dl>
+            <button>Register</button>
+        </form>
+    </body>
+</html>
