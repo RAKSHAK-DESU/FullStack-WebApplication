@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Meta Characters</title>
+    </head>
+    <body>
+        <form action="">
+            Test: <input type="text" pattern="colou?r" placeholder="Enter color or colour" name="test">
+            <button>Register</button>
+        </form>
+        <form action="">
+            Test: <input type="text" pattern="colou+r" placeholder="Enter colour or colouur" name="test">
+            <button>Register</button>
+        </form>
+        <form action="">
+            Test: <input type="text" pattern="colou*r" placeholder="Enter color/colour or colouur" name="test">
+            <button>Register</button>
+        </form>
+        <form action="">
+            Test: <input type="text" pattern=".at" placeholder="3 chars word | should end with at" name="test">
+            <button>Register</button>
+        </form>
+        <form action="">
+            Test: <input type="text" pattern="?at" placeholder="infi chars | should end with at" name="test">
+            <button>Register</button>
+        </form>
+        <form action="">
+            Test: <input type="text" pattern="cat|mat" placeholder="either cat or mat" name="test">
+            <button>Register</button>
+        </form>
+        <form action="">
+            Test: <input type="text" pattern="\d\d" placeholder="Only numeric value" name="test">
+            <button>Register</button>
+        </form>
+        <form action="">
+            Test: <input type="text" pattern="\d\d\s\w" name="test">
+            <button>Register</button>
+        </form>
+    </body>
+</html>
