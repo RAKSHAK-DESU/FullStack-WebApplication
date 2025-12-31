@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Checked</title>
+        <style>
+            #UserName+span{
+                display: none;
+            }
+            #UserName:focus+span{
+                display: inline;
+            }
+            #UserName:focus{
+                border: 4px solid red;
+                box-shadow: 2px 2px 3px red;
+            }
+            
+            #terms:checked+span{
+                color: green;
+            }
+            #terms+span{
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>Register User</h3>
+        <dl>
+            <dt>Username</dt>
+            <dd>
+                <input type="text" name="" id="UserName" placeholder="Name in Blocked Letters">
+                <span>Name in Block Letters Only</span>
+            </dd>
+        </dl>
+        <fieldset>
+            <legend>Terms and Conditions</legend>
+            <h4>Terms of Services</h4>
+            <input type="checkbox" id="terms"><span>I Accept</span>
+        </fieldset>
+    </body>
+</html>

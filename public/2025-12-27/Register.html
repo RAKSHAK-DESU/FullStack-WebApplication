@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        #username:read-only{
+            background-color: gray;
+        }
+        button:enabled{
+            background-color: green;
+            color: white;
+            cursor: grab;
+        }
+        button:disabled{
+            background-color: rgb(253, 110, 110);
+            color: white;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+    <h2>Register User</h2>
+    <dl>
+        <dt>User name</dt>
+        <dd>
+            <input type="text" id="username" value="John" readonly>
+        </dd>
+    </dl>
+    <button disabled>Register</button>
+</body>
+</html>

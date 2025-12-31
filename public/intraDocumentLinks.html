@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>IntraDocument Links</title>
+        <style>
+            #container{
+                display: grid;
+                grid-template-columns: 3fr 9fr;
+            }
+            #rightPanel{
+                height: 500px;
+                overflow:auto;
+            }
+            a{
+                text-decoration: none;
+            }
+            a:hover{
+                color: rgb(16, 158, 0);
+                text-decoration: underline ;
+            }
+            a:link{
+                color: green;
+                font-size: 20px;
+                font-weight: bold;
+            }
+            a:visited{
+                color: gray;
+            }
+            a:active{
+                color: red;
+            }
+            li{
+                border: 2px solid black;
+                background-color: tomato;
+                color: white;
+                padding: 5px;
+                width: 100px;
+                margin-bottom: 20px;
+            }
+            li:hover{
+                background-color: black;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div id="leftPanel">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#mercedes">Mercedes</a></li>
+                    <li><a href="#bmw">BMW</a></li>
+                    <li><a href="#ducati">Ducati</a></li>
+                    <li><a href="#tesla">Tesla</a></li>
+                </ul>
+            </div>
+            <div id="rightPanel">
+                <h2 id="home">Home</h2>
+                <p>Home ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, incidunt!</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, numquam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, incidunt!</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, numquam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, incidunt!</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, numquam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, incidunt!</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, numquam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, incidunt!</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, numquam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, incidunt!</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, numquam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, incidunt!</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, numquam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, incidunt!</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, numquam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, incidunt!</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, numquam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+
+                <h2 id="mercedes">Mercedes</h2>
+                <p>Mercedes ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, incidunt!</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, numquam.</p>
+                <figure>
+                    <figcaption id="tate">Tate</figcaption>
+                    <img src="assets/tatesmile.jpg" width="200" height="auto" alt="">
+                </figure>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, incidunt!</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, numquam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, incidunt!</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, numquam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, incidunt!</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, numquam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, incidunt!</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, numquam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, incidunt!</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, numquam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, incidunt!</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, numquam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, incidunt!</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, numquam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, incidunt!</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, numquam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+
+                <h2 id="bmw">BMW</h2>
+                <p>BMW ipsum dolor sit <span>Great <a href="#offers">Offers</a> on BMW Merch and <a href="#tate">Tate</a></span> amet consectetur adipisicing elit. Voluptatem, incidunt!</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, numquam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, incidunt!</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, numquam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, incidunt!</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, numquam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, incidunt!</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, numquam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, incidunt!</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, numquam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <ol id="offers">
+                    Offers
+                    <li>10% off on superBikes</li>
+                    <li>30% off on Helmets</li>
+                </ol>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, incidunt!</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, numquam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, incidunt!</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, numquam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, incidunt!</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, numquam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, incidunt!</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, numquam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+
+                <h2 id="ducati">Ducati</h2>
+                <p>Ducati ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, incidunt!</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, numquam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, incidunt!</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, numquam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, incidunt!</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, numquam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, incidunt!</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, numquam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, incidunt!</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, numquam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, incidunt!</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, numquam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, incidunt!</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, numquam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, incidunt!</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, numquam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, incidunt!</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, numquam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+        </div>
+    </body>
+</html>

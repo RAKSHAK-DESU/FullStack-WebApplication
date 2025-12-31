@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Meter</title>
+        <style>
+            meter{
+                
+                width: 100%;
+                height: 20px;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <fieldset>
+            <legend>Password Strength</legend>
+            <dl>
+                <dt>Strong Password</dt>
+                <dd>
+                    <meter value="80" min="1" max="100"></meter>
+                </dd>
+                <dt>Weak Password</dt>
+                <dd>
+                    <meter value="100" min="1" max="100" low="50" high="80"></meter>
+                </dd>
+                <dt>Poor Password</dt>
+                <dd>
+                    <meter value="100" min="1" max="100" low="80" high="90"></meter>
+                </dd>
+            </dl>
+        </fieldset>
+    </body>
+</html>

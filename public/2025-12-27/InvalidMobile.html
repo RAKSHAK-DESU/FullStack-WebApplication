@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #Mobile:valid{
+            border: 2px solid green;
+            box-shadow: 2px 2px 3px green;
+        }
+        #Mobile:invalid{
+            border: 2px solid red;
+            box-shadow: 2px 2px 3px red;
+        }
+        #Mobile:valid+span{
+            display: none;
+        }
+        #Mobile:invalid+span{
+            display: block;
+            color: red;
+        }
+        #Mobile:required{
+            border: 2px solid red;
+            box-shadow: 2px 2px 3px red;
+        }
+    </style>
+</head>
+<body>
+    <h3>Register User</h3>
+    <dl>
+        <dt>Mobile</dt>
+        <dd>
+            <input type="text" id="Mobile" required pattern="\+81\d{10}">
+            <span>Mobile Required / Invalid Mobile</span>
+        </dd>
+    </dl>
+</body>
+</html>

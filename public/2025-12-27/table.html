@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        tbody tr:nth-child(even){
+            background-color: rgb(223, 255, 223);
+        }
+        tbody tr:nth-child(odd){
+            background-color: rgb(255, 230, 230);
+        }
+        thead tr{
+            background-color: green;
+            color: white;
+        }
+        td:empty{
+            background-color: gray;
+        }
+        div p:nth-child(even){
+            background-color: rgb(179, 146, 146);
+        }
+        div p:nth-child(odd){
+            background-color: rgb(152, 152, 190);
+        }
+        :root{
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <table width="300" border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>TV</td>
+                <td>4000000</td>
+            </tr>
+            <tr>
+                <td>TV</td>
+                <td>4000000</td>
+            </tr>
+            <tr>
+                <td>TV</td>
+                <td>4000000</td>
+            </tr>
+            <tr>
+                <td>TV</td>
+                <td>4000000</td>
+            </tr>
+            <tr>
+                <td>TV</td>
+                <td></td>
+            </tr>    
+        </tbody>
+    </table>
+    <div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, facere!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, facere!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, facere!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, facere!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, facere!</p>
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, facere!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, facere!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, facere!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, facere!</p>
+    </div>
+</body>
+</html>

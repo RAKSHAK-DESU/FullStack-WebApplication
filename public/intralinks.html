@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>IntraLinks</title>
+        <style>
+            .topic{
+                border: 2px solid black;
+                padding: 20px;
+                background-color: gray;
+               
+                margin-bottom: 20px;
+            }
+            .topic:target{
+                background-color: rgb(74, 74, 74);
+                 color: white; 
+            }
+            .topic:hover{
+                background-color: rgb(112, 112, 112);
+                color: rgb(194, 194, 194);
+            }
+            ul{
+                list-style: none;
+                display: flex;
+            }
+            li{
+                font-size: 20px;
+                margin-right: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <ul>
+                <li><a href="#html">HTML</a></li>
+                <li><a href="#css">CSS</a></li>
+                <li><a href="#js">JavaScript</a></li>
+            </ul>
+        </div>
+        <div class="topic" id="html">
+            <h2>HTML</h2>
+            <p>It is a Markup Language</p>
+        </div>
+        <div class="topic" id="css">
+            <h2>CSS</h2>
+            <p>It defines styles for html </p>
+        </div>
+        <div class="topic" id="js">
+            <h2>JavaScript</h2>
+            <p>It is a Scripting Language</p>
+        </div>
+    </body>
+</html>
