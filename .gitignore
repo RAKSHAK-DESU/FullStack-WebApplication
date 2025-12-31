@@ -1,0 +1,5 @@
+﻿*.mp4
+*.mov
+*.zip
+node_modules/
+dist/
