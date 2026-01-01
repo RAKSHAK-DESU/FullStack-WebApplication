@@ -10,19 +10,30 @@
                 height: 400px;
             }
             img{
-                width: 500px;
-                
+                width: 100px;
+               
                 transition: 1s;
+                box-shadow: 12px 12px 3px black;
+                border: 2px dotted yellow ;
             }
             img:hover{
-            transform:scale3d(2,2,3);
+                transform:scale3d(3,3,5);
                 transition: 2s;
+            }
+            .back{
+                background-image: url("../assets/tatespy.png");
+                background-size: 200px 200px;
+                
+                border: 2px solid black;
+                width: 200px;
+                height: 200px; 
+               
             }
         </style>
     </head>
     <body>
         <div class="container">
-            <div>
+            <div class="back">
                 <img src="../assets/tatespy.png" alt="">
             </div>
         </div>
