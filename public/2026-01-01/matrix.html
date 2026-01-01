@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Scale</title>
+        <style>
+            .container{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 400px;
+            }
+            img{
+                width: 500px;
+                
+                transition: 1s;
+            }
+            img:hover{
+            transform:scale3d(2,2,3);
+                transition: 2s;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div>
+                <img src="../assets/tatespy.png" alt="">
+            </div>
+        </div>
+    </body>
+</html>
