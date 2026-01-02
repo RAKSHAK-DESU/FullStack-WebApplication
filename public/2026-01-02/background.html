@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        ul{
+            list-style: none;
+            border: 2px solid darkcyan;
+            padding: 5px;
+            border-radius: 5px;
+            background-color: darkcyan;
+            color: white;
+        }
+        
+        @media screen and (orientation: landscape){
+            li{
+                display: inline;
+                margin-right: 30px;
+            }
+        }
+        @media screen and (orientation: portrait) {
+            li{
+                display: block;
+                margin-bottom: 30px;
+                
+            }
+            ul{
+                width: 30px;
+                margin-left: -40px;
+                transition: 1s;
+            }
+            ul:hover{
+                margin-left: -10px;
+                transition: 1.5s;
+            }
+            .menu-title{
+            display: none;
+            }
+        }
+        @media  screen and (min-width:500px){
+            body{
+                background-color: yellow;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><span class="bi bi-facebook"></span><span class="menu-title">FaceBook</span></li>
+            <li><span class="bi bi-twitter"></span><span class="menu-title">Twitter</span></li>
+            <li><span class="bi bi-instagram"></span><span class="menu-title">Instagram</span></li>
+            <li><span class="bi bi-youtube"></span><span class="menu-title">Youtube</span></li>
+        </ul>
+    </nav>
+</body>
+</html>
