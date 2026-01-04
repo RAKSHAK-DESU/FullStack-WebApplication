@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<body class="container-fluid">
+    <div class="d-flex justify-content-center align-items-center" style="height: 500px;">
+        <div>
+            <h1>Register User</h1>
+            <div class="mb-2">
+                <label for="username">UserName</label>
+                <div>
+                    <input type="text" name="username" class="form-control">
+                </div>
+            </div>
+            <div class="mb-2">
+                <label class="form-label" for="City">Choose City</label>
+                <div>
+                    <select name="City" id="" class="form-select">
+                        <option value="">Select Your City</option>
+                        <option value="">Tokyo</option>
+                        <option value="">Dubai</option>
+                    </select>
+                </div>
+            </div>
+            <div class="mb-2">
+                <label for="password">Password</label>
+                <div>
+                    <input type="password" name="password" class="form-control">
+                </div>
+            </div>
+            <div class="mb-2">
+                <label for="">You Want Subscription?</label>
+                <div class="form-switch">
+                    <input type="checkbox" class="form-check-input" name="subscribe" id="subscribe"> <label class="form-check-label" for="subscribe">Yes</label>
+                </div>
+            </div>
+            <div class="mb-2">
+                <label for="age" class="form-label" for="">Select Age</label>
+                <div>
+                    <input type="range" name="age" class="form-range">
+                </div>
+            </div>
+            <div class="mt-2">
+                <button class="btn btn-primary w-100">Register</button>
+            </div>
+        </div>
+    </div>
+    <script src="../../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
