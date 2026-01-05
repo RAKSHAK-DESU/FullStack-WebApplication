@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix Home</title>
+    <link
+      rel="stylesheet"
+      href="../../node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <style>
+      body {
+        background-image: url("../assets/spidygame.jpg");
+        background-size: cover;
+        color: whitesmoke;
+      }
+      .backcolor {
+        width: 100%;
+        height: 700px;
+        background-image: radial-gradient(
+          rgba(0, 0, 0, 0.7),
+          rgba(126, 126, 126, 0.3)
+        );
+      }
+      .title {
+        font-size: 35px;
+        color: rgb(255, 0, 0);
+        text-shadow: 2px 2px 3px rgb(0, 0, 0);
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+      }
+      .main-title {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 60px;
+        font-weight: bold;
+        width: 600px;
+        color: rgb(255, 186, 186);
+      }
+      .main-subtitle {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 30px;
+      }
+      .register-title {
+        font-size: 20px;
+      }
+      .accordion-button{
+        background-color: rgba(186, 2, 2, 0.651);
+        color: white;
+      }
+      .accordion-body{
+        background-color: rgba(255, 0, 123, 0.259);
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="backcolor">
+      <header class="d-flex justify-content-between p-3">
+        <div class="title">Marvel's Spider Man</div>
+        <div>
+          <div class="d-flex">
+            <div class="dropdown me-2">
+              <button
+                class="btn btn-dark dropdown-toggle"
+                data-bs-toggle="dropdown"
+              >
+                <span class="bi bi-globe"></span>
+                Language
+              </button>
+              <div class="dropdown-menu collapse">
+                <div class="dropdown-item">
+                  <span>English</span>
+                </div>
+                <div class="dropdown-item active">
+                  <span>日本語</span>
+                </div>
+              </div>
+            </div>
+            <button class="btn btn-danger">SignIn</button>
+          </div>
+        </div>
+      </header>
+      <section
+        class="d-flex justify-content-center align-items-center text-center"
+        style="height: 500px"
+      >
+        <div>
+          <p class="main-title">Miles Morales Spidy</p>
+          <p class="main-subtitle">An authentic Spider-Man adventure</p>
+          <div>
+            <p class="register-title">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, eum.
+            </p>
+            <div class="input-group input-group-lg">
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Your email"
+              />
+              <button class="btn btn-danger btn-lg">
+                Get Started
+                <span class="bi bi-chevron-right"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <main>
+        <div class="accordion" id="faq">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button"
+                data-bs-toggle="collapse"
+                data-bs-target="#html"
+              >
+               Lorem ipsum dolor sit.
+              </button>
+            </h2>
+            <div
+              id="html"
+              class="accordion-collapse collapse show"
+              data-bs-parent="#topics"
+            >
+              <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, vel?</div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                data-bs-toggle="collapse"
+                data-bs-target="#css"
+              >
+               Lorem ipsum dolor sit amet.
+              </button>
+            </h2>
+            <div
+              id="css"
+              class="accordion-collapse collapse"
+              data-bs-parent="#topics"
+            >
+              <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, ullam!</div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                data-bs-toggle="collapse"
+                data-bs-target="#js"
+              >
+                JavaScript Tutorial
+              </button>
+            </h2>
+            <div
+              id="js"
+              class="accordion-collapse collapse"
+              data-bs-parent="#topics"
+            >
+              <div class="accordion-body">Something about JavaScript</div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="../../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>

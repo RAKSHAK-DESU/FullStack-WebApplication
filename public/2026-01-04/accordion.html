@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <title>Accordion</title>
+</head>
+
+<body class="container-fluid">
+
+<h2>Accordion</h2>
+
+<div class="accordion" id="topics">
+
+    
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#html">
+                HTML Tutorial
+            </button>
+        </h2>
+        <div id="html" class="accordion-collapse collapse show" data-bs-parent="#topics">
+            <div class="accordion-body">
+                Something about HTML
+            </div>
+        </div>
+    </div>
+
+   
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#css">
+                CSS Tutorial
+            </button>
+        </h2>
+        <div id="css" class="accordion-collapse collapse" data-bs-parent="#topics">
+            <div class="accordion-body">
+                Something about CSS
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#js">
+                JavaScript Tutorial
+            </button>
+        </h2>
+        <div id="js" class="accordion-collapse collapse" data-bs-parent="#topics">
+            <div class="accordion-body">
+                Something about JavaScript
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+</body>
+</html>
