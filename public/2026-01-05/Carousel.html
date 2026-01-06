@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="container-fluid">
+    <div class="carousel carousel-dark slide carousel-fade mt-2" data-bs-ride="carousel" id="banner">
+        <div class="carousel-inner" >
+            <div data-bs-interval="200" class="carousel-item active">
+                <img src="../assets/slide1.png" class="w-100 d-block" alt="">
+            </div>
+            <div data-bs-interval="200" class="carousel-item ">
+                <h1>Amazon Shopping 50% OFF on Fashion</h1>
+            </div>
+            <div data-bs-interval="200" class="carousel-item">
+                <img src="../assets/slide2.png" class="w-100 d-block" alt="">
+            </div>
+            <div data-bs-interval="200" class="carousel-item">
+                <img src="../assets/slide3.png" class="w-100 d-block" alt="">
+            </div>
+            <div data-bs-interval="200" class="carousel-item">
+                <img src="../assets/slide4.png" class="w-100 d-block" alt="">
+            </div>
+            <button  class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#banner">
+                <span style="background-color: rgb(183, 183, 183);" class="carousel-control-prev-icon"></span>
+            </button>
+            <button  class="carousel-control-next" data-bs-slide="next" data-bs-target="#banner">
+                <span style="background-color: rgb(183, 183, 183);" class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button data-bs-target="#banner" class="active" data-bs-slide-to="0"></button>
+                <button data-bs-target="#banner" data-bs-slide-to="1"></button>
+                <button data-bs-target="#banner" data-bs-slide-to="2"></button>
+                <button data-bs-target="#banner" data-bs-slide-to="3"></button>
+            </div>
+        </div>
+    </div>
+    <script src="../../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
