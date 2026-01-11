@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Query Selector</title>
+    <script>
+        function bodyload(){
+            document.querySelector('#pic').src="../../public/assets/spiderman2.jpg";
+            document.querySelector('.btn').value="Sup Dawg";
+            document.querySelector('.btn').style.backgroundColor="red";
+        }
+    </script>
+</head>
+<body onload="bodyload()">
+    <img src="" id="pic" name="pic" alt="" height="100" width="100" border="1">
+    <div>
+        <form action="" id="frmRegister">
+            <h2>Register</h2>
+            User Name: <input type="text" name="txtname"> <input type="button" id="btnRegister" class="btn">
+        </form>
+    </div>
+    <div>
+        <form action="" id="frmLogin">
+            <h2>Login</h2>
+            Email : <input name="txtEmail" type="email"> <input type="button" id="btnLogin" class="btn">
+        </form>
+    </div>
+</body>
+</html>

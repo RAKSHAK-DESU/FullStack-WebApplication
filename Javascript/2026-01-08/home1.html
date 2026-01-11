@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Get Element ID</title>
+    <script>
+        function bodyload(){
+           document.getElementById("pic").src="../../public/assets/rakshakducati.jpg";
+           document.getElementById("btnRegister").value="Register Mate";
+           document.getElementById("btnLogin").value="Login Mate";
+        }
+    </script>
+</head>
+<body onload="bodyload()">
+    <img src="" id="pic" name="pic" alt="" height="100" width="100" border="1">
+    <div>
+        <form action="" id="frmRegister">
+            <h2>Register</h2>
+            User Name: <input type="text" name="txtname"> <input type="button" id="btnRegister">
+        </form>
+    </div>
+    <div>
+        <form action="" id="frmLogin">
+            <h2>Login</h2>
+            Email : <input name="txtEmail" type="email"> <input type="button" id="btnLogin">
+        </form>
+    </div>
+</body>
+</html>

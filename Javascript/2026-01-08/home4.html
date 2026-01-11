@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Get Element Class Name</title>
+    <script>
+        function bodyload(){
+           result=  document.getElementsByClassName('form-check-input');
+           alert("Total Number of Payment Methods : "+ result.length);
+        }
+    </script>
+</head>
+<body onload="bodyload()">
+    <fieldset>
+        <legend>Payment Method</legend>
+        <input type="radio" class="form-check-input" name="pay" id="" >Cash
+        <input type="radio" name="pay" id="">UPI
+        <input type="radio" name="pay" id="">Credit Card
+    </fieldset>
+</body>
+</html>

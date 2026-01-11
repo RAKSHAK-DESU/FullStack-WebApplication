@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Output Techniques</title>
+    <script>
+        function DeleteClick(){
+           alert("Hello Dawg");
+        }
+        function DeleteChick(){
+            if(confirm("Hello Dawg, are you sure to want to delete?")==true){
+                document.querySelector("h1").innerHTML="<font color='red'>Record Deleted</font>";
+            }else{
+                alert("You Cancelled");
+            }
+          ;
+        }
+        function DeleteWarn(){
+          console.warn("warning mate");
+        }
+        function DeleteError(){
+            console.error("Errpr Mate")
+         
+        }
+    </script>
+</head>
+<body >
+    <h2>Click Delete Button to remove record alert</h2>
+    <button onclick="DeleteClick()">Delete</button>
+
+     <h2>Click Delete Button to remove record Confirm</h2>
+    <button onclick="DeleteChick()">Delete</button>
+    <h1 style="align-items: center;"></h1>
+
+    <h2>Click Delete Button to remove record Confirm</h2>
+    <button onclick="DeleteWarn()">Delete warn</button>
+
+    <h2>Click Delete Button to remove record Confirm</h2>
+    <button onclick="DeleteError()">Delete warn</button>
+</body>
+</html>

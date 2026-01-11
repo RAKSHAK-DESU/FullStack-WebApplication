@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript - Inline</title>
+    <script>
+        function bodyload(){
+            window.document.images[0].src = "../../public/assets/kingcar.jpg";
+            window.document.forms[0].elements[1].value= "Register";
+            window.document.forms[1].elements[1].value= "Login";
+
+            pic.src="../../public/assets/ducati1.jpg";
+            frmRegister.btnRegister.value="Hii";
+            frmLogin.btnLogin.value="YOLO"; 
+        }
+    </script>
+</head>
+<body onload="bodyload()">
+    <img src="" name="pic" alt="" height="100" width="100" border="1">
+    <div>
+        <form action="" name="frmRegister">
+            <h2>Register</h2>
+            User Name: <input type="text" name="txtname"> <input type="button" name="btnRegister">
+        </form>
+    </div>
+    <div>
+        <form action="" name="frmLogin">
+            <h2>Login</h2>
+            Email : <input name="txtEmail" type="email"> <input type="button" name="btnLogin">
+        </form>
+    </div>
+</body>
+</html>
