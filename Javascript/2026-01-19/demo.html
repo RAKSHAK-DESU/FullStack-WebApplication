@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Types</title>
+    <script>
+        function SubmitClick(){
+            const username= prompt("ENter Name");
+            const age= document.getElementById('lstAge').value;
+           // document.write("You will be "+ (parseInt(age)+1) +"Next Year");
+
+            const msg1= "Hello ! " +username+ " You will be "+(parseInt(age)+1)+ "Next Year.";
+            document.write(msg1);
+            const msg2=`Hello ! ${username} You will be ${(parseInt(age)+1)} Next Year`;
+            document.write(msg2);
+        }
+    </script>
+</head>
+<body>
+    <dl>
+        <dt>Select Age</dt>
+        <dd>
+            <select name="" id="lstAge">
+                <option value="15">15</option>
+                <option value="20">20</option>
+                <option value="25">25</option>
+            </select>
+        </dd>
+        
+    </dl>
+    <button onclick="SubmitClick()">Submit</button>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>String Manipulate</title>
+        <script>
+            function ChangeCase(){
+                var username = document.getElementById('txtName').value;
+                var firstChar = username.charAt(0);
+                var restChars= username.substring(1);
+                var sentence= firstChar.toUpperCase() + restChars.toLowerCase();
+                document.getElementById('txtName').value = sentence;
+            }
+        </script>
+    </head>
+    <body>
+        <fieldset>
+            <legend>Verify Email</legend>
+            <div>
+                <input type="text" name="" id="txtEmail" onblur="ChangeCase()">
+            </div>
+            <div id="msg">
+
+            </div>
+            <legend>UserName</legend>
+            <div>
+                <input type="text" name="" id="" size="40" placeholder="Name must start with Uppercase letter">
+                <p></p>
+            </div> 
+        </fieldset>
+    </body>
+</html>

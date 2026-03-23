@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>String manipulations</title>
+        <script>
+            function VerifyName (){
+                var username= document.getElementById("txtName").value;
+                if (username.charCodeAt(0)>=65 && username.charCodeAt(0)<=90) {
+                   document.querySelector('p').innerHTML= ""; 
+                }else{
+                    document.querySelector("p").innerHTML="Name must start with uppercase letter".fontcolor('red');
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <fieldset>
+            <legend>User Name</legend>
+            <div>
+                <input type="text" size="40" placeholder="" name="" id="">
+            </div>
+        </fieldset>
+    </body>
+</html>

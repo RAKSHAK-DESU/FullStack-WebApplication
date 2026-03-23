@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>String</title>
+        <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+        <script>
+            function ChangeTheme(){
+                const themeCheckbox = document.getElementById('theme');
+                var formContainer = document.getElementById("formContainer");
+                if(themeCheckbox.checked){
+                    formContainer.className= "dark-theme";
+                }else{
+                    formContainer.classList= "light-theme";
+                }
+            }
+        </script>
+        <style>
+            .form{
+                border: 2px solid black;
+                padding: 20px;
+                width: 250px;
+                margin-top: 20px;
+            }
+            .dark-theme{
+                background-color: black;
+                color: white;
+            }
+            .light-theme{
+                background-color: white;
+                color: black;
+            }
+        </style>
+    </head>
+    <body class="container-fluid">
+        <div class="form" id="formContainer">
+            <div class="form-switch">
+                <input type="checkbox"  onchange="ChangeTheme()" class="form-check-input" name="" id="theme"> Dark Theme
+            </div>
+            <h2>Register User</h2>
+            <dl>
+                <dt>Username</dt>
+                <dd><input type="text" name="" id=""></dd>
+                <dt>Password</dt>
+                <dd><input type="password"></dd>
+                <dt>Email</dt>
+                <dd><input type="email"></dd>
+            </dl>
+            <button>Login</button>
+        </div>
+    </body>
+</html>

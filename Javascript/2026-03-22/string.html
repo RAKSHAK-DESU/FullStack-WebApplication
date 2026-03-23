@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>String Demo</title>
+        <script>
+            function ChangeColor(){
+                alert(document.querySelector("p").style.color = document.querySelector("select").value);
+               
+            }
+        </script>
+    </head>
+    <body>
+        <fieldset>
+            <legend>Choose Effects</legend>
+            <dl>
+                <dt>Font Color</dt>
+                <dd>
+                    <select onchange="ChangeColor()">
+                        <option value="Red">Red</option>
+                        <option value="Green">Green</option>
+                        <option value="White">White</option>
+                        <option value="Yellow">Yellow</option>
+                    </select>
+                </dd>
+            </dl>
+        </fieldset>
+        <p>Welcome To Javascript</p>
+    </body>
+</html>
